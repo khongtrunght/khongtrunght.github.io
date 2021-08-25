@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Item Details</title>
+</head>
+<body>
+  <div id="data">
+  </div>
+  
+    <script>
+        //var url = 'http://localhost:8000';
+        fetch('https://hust-api.herokuapp.com/student/name_html/?name=Tr%E1%BA%A7n+Th%E1%BB%8B+Li%C3%AAn')
+        .then(res => res.json())
+        .then(data => {console.log(data);
+                        document.getElementById("data").innerHTML = data;})
+    </script>
+    <h1></h1>
+</body>
+</html>
